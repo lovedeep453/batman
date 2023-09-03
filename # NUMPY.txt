@@ -1,0 +1,30 @@
+# python tutorials:
+     *NUMPY......
+
+*How to create a basic array:
+~1d array ;
+ np.array([]),np.zeros(), np.ones(), np.empty(), np.arrange( , , ), np.linspace( , , )
+
+*adding,removing,sorting:
+np.sort(), np.concatenate(( , ), axis),
+ 
+*prop:
+arr.ndim, arr.size, arr.shape,
+arr.reshape( , ),  
+
+*How to convert a 1D array into a 2D array (how to add a new axis to an array):
+
+>Using np.newaxis will increase the dimensions of your array by one dimension when used once : a2 = a[np.newaxis, :] .
+>You can also expand an array by inserting a new axis at a specified position with np.expand_dims : b = np.expand_dims(a, axis=1) .
+
+*Indexing and slicing:
+
+>If you want to select values from your array that fulfill certain conditions, it’s straightforward with NumPy.
+   >>print(a[a < 5]),
+         five_up = (a >= 5)
+     print(a[five_up])
+         divisible_by_2 = a[a%2==0]
+     print(divisible_by_2)
+
+> a[::-1]  # reversed a;
+>
